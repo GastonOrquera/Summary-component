@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-titles: 'Roboto Condensed', sans-serif;
+    --font-secondary: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.conteinerAllContent {
+    background-color: rgb(243, 246, 255);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteinerAllContent .conteiner {
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 22px;
+    border-top-left-radius: 22px;
+    background-color: #FFFFFF;
+}
+
+.boxOneSection {
+    background: linear-gradient(to bottom right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 18rem;
+    padding: 1rem 2rem;
+    width: 14rem;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.boxOneSection h2 {
+    font-family: var(--font-titles);
+    font-size: .9rem;
+    font-weight: 500;
+    /* color: #c5b7fc; */
+    color: #bcb4dd;
+    letter-spacing: 1px;
+}
+
+.boxTwoSection {
+    padding: 1rem 2rem;
+    width: 14rem;
+
+}
+
+.radiusBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 6.6rem;
+    height: 6.6rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.radiusBox h3 {
+    /* color: #eee9ff; */
+    color: #FBFBFC;
+    font-size: 2.6rem;
+    font-family: var(--font-titles);
+}
+
+.radiusBox p {
+    font-family: var(--font-secondary);
+    color: #bcb4dd;
+    font-size: .9rem;
+}
+
+.boxOneSection h3 {
+    font-family: var(--font-titles);
+    color: #eee9ff;
+    letter-spacing: 1px;
+}
+
+.boxOneSection p {
+    font-family: var(--font-secondary);
+    color: #bcb4dd;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.boxTwoSection h2 {
+    color: #313541;
+    font-family: var(--font-titles);
+    font-size: 1rem;
+    font-weight: 580;
+    letter-spacing: 1px;
+}
+
+.boxTwoSection .box1 {
+    margin-top: .9rem;
+    background-color: #FEF5F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem .6rem;
+    border-radius: 8px;
+}
+
+.boxTwoSection .box1 .svgReaction {
+    background-image: url(assets/images/icon-reaction.svg);
+    height: 1rem;
+    width: 1rem;
+
+    background-size: cover;
+}
+
+.boxTwoSection .bg2 {
+    background-color: #FFFEE2;
+}
+
+.boxTwoSection .box1 .svgMemory {
+    background-image: url(assets/images/icon-memory.svg);
+    height: 1rem;
+    width: 1rem;
+
+    background-size: cover;
+}
+
+.boxTwoSection .bg3 .svgVerbal {
+    background-image: url(assets/images/icon-verbal.svg);
+    height: 1rem;
+    width: 1rem;
+    background-size: cover;
+}
+
+.boxTwoSection .bg4 {
+    background-color: #F3F3FD;
+}
+
+.boxTwoSection .bg4 .svgVisual {
+    background-image: url(assets/images/icon-visual.svg);
+    height: 1rem;
+    width: 1rem;
+    background-size: cover;
+}
+
+.boxTwoSection .bg4 .visual {
+    color: #3743B3;
+}
+
+.boxTwoSection .bg3 .verbal {
+    color: #74CBB7;
+}
+
+.boxTwoSection .bg2 .memory {
+    color: #EAC27B;
+}
+
+.boxTwoSection .bg3 {
+    background-color: #F2FBFA;
+}
+
+.boxTwoSection .box1 h4 {
+    color: #FF9B9A;
+    margin-left: .4rem;
+    font-weight: 600;
+    font-size: .9rem;
+    font-family: var(--font-secondary);
+}
+
+.boxTwoSection .box1 p {
+    font-family: var(--font-secondary);
+    margin-left: 2rem;
+    font-size: .9rem;
+}
+
+.boxTwoSection .box1 span {
+    color: #bcb4dd;
+}
+
+.boxTwoSection .btn {
+    background-color: #303B59;
+    padding: .5rem 1rem;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    font-size: .9rem;
+    font-family: var(--font-secondary);
+    color: rgb(243, 246, 255);
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 680px) {
+    .conteinerAllContent {
+        width: 100%;
+        align-items: start;
+        height: max-content;
+    }
+
+    .conteiner {
+        flex-direction: column;
+    }
+
+    .boxOneSection {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .boxTwoSection {
+        width: 100%;
+    }
+}
